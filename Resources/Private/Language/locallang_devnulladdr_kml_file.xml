@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'templatedisplay'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_devnulladdr_kml_file">KML-File</label>
+			<label index="tx_devnulladdr_kml_file.title">Title</label>
+			<label index="tx_devnulladdr_kml_file.type">KML file mode</label>
+			<label index="tx_devnulladdr_kml_file.type.I.0">local file</label>
+			<label index="tx_devnulladdr_kml_file.type.I.1">URL</label>
+			<label index="tx_devnulladdr_kml_file.kml_file">File path</label>
+			<label index="tx_devnulladdr_kml_file.kml_url">URL</label>
+			<label index="tx_devnulladdr_kml_file.kml_suppress">Suppress info window</label>
+			<label index="tx_devnulladdr_kml_file.kml_preserve">Preserve viewport</label>
+		</languageKey>
+		
+		<languageKey index="de" type="array">
+			<label index="tx_devnulladdr_kml_file">KML-Datei</label>
+			<label index="tx_devnulladdr_kml_file.title">Titel</label>
+			<label index="tx_devnulladdr_kml_file.type">KML file mode</label>
+			<label index="tx_devnulladdr_kml_file.type.I.0">local file</label>
+			<label index="tx_devnulladdr_kml_file.type.I.1">URL</label>
+			<label index="tx_devnulladdr_kml_file.kml_file">Dateipfad</label>
+			<label index="tx_devnulladdr_kml_file.kml_url">URL</label>
+			<label index="tx_devnulladdr_kml_file.kml_suppress">Info Windows nicht anzeigen</label>
+			<label index="tx_devnulladdr_kml_file.kml_preserve">Kartenausschnitt nicht anpassen</label>
+		</languageKey>
+	</data>
+</T3locallang>

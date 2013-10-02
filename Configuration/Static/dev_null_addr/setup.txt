@@ -1,0 +1,111 @@
+
+plugin.tx_devnulladdr_pi1 {
+	resources {
+		mapView {
+			cssScreen = {$config.tx_devnulladdr.resources.mapView.cssScreen}
+			cssPrint  = {$config.tx_devnulladdr.resources.mapView.cssPrint}
+			cssCustom = {$config.tx_devnulladdr.resources.mapView.cssCustom}
+			jsMapApi = {$config.tx_devnulladdr.resources.mapView.jsMapApi}
+			jsClusterer = {$config.tx_devnulladdr.resources.mapView.jsClusterer}
+			template = EXT:dev_null_addr/Resources/Private/Templates/maps.html
+		}
+		mapKml {
+			template = EXT:dev_null_addr/Resources/Private/Templates/maps.kml.html
+		}
+	}
+	maps {
+		infoWindow_stdWrap {
+			wrap = |
+			trim = 1
+			required = 1
+			htmlSpecialChars = 0
+#			replacement {
+#				10 {
+#					search = '
+#					replace = \'
+#				}
+#			}
+		}
+	}
+	typeNum {
+		mapJs = {$config.tx_devnulladdr.typeNumMapJs}
+		mapKml = {$config.tx_devnulladdr.typeNumMapKml}
+	}
+}
+
+# fix to switch of source code optimization
+# you have to ensure dev_null_addr ist loaded after sourceopt
+
+[globalVar = GP:type = {$config.tx_devnulladdr.typeNumMapJs}]
+config.sourceopt.enabled = 0
+[global]
+
+includeLibs.tx_devnulladdr_pi1_mapjs = EXT:dev_null_addr/pi1/class.tx_devnulladdr_pi1.map_js.php
+
+tx_devnulladdr_pi1_mapjs = PAGE
+tx_devnulladdr_pi1_mapjs {
+	typeNum                   = {$config.tx_devnulladdr.typeNumMapJs}
+	config {
+		disableAllHeaderCode = 1
+		additionalHeaders    = Content-type: text/plain; charset=utf-8
+		admPanel             = 0
+		disablePrefixComment = 1
+		index_enable         = 0	## disable indexed search
+	}
+	10 = CONTENT
+	10 {
+		table = tt_content
+		select {
+			pidInList = this
+			uidInList.data = GP:tx_devnulladdr|map
+			uidInList.intval = 1
+			max = 1
+		}
+		renderObj = COA
+		renderObj {
+			10 < plugin.tx_devnulladdr_pi1
+			10 = USER_INT
+			10 {
+				userFunc = tx_devnulladdr_pi1_mapjs->main
+			}
+		}
+	}
+}
+
+[globalVar = GP:type = {$config.tx_devnulladdr.typeNumMapKml}]
+config.sourceopt.enabled = 0
+[global]
+
+includeLibs.tx_devnulladdr_pi1_mapkml = EXT:dev_null_addr/pi1/class.tx_devnulladdr_pi1.map_kml.php
+
+tx_devnulladdr_pi1_mapkml = PAGE
+tx_devnulladdr_pi1_mapkml {
+	typeNum                   = {$config.tx_devnulladdr.typeNumMapKml}
+	config {
+		disableAllHeaderCode = 1
+		additionalHeaders    = Content-Type: application/vnd.google-earth.kml+xml kml | Content-Disposition: attachment; filename="letsdive.kml"');
+#		additionalHeaders    = Content-type: text/plain; charset=utf-8
+		admPanel             = 0
+		disablePrefixComment = 1
+		index_enable         = 0	## disable indexed search
+	}
+	10 = CONTENT
+	10 {
+		table = tt_content
+		select {
+			pidInList = this
+			uidInList.data = GP:tx_devnulladdr|map
+			uidInList.intval = 1
+			max = 1
+		}
+		renderObj = COA
+		renderObj {
+			10 < plugin.tx_devnulladdr_pi1
+			10 = USER_INT
+			10 {
+				userFunc = tx_devnulladdr_pi1_mapkml->main
+			}
+		}
+	}
+}
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'templatedisplay'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_devnulladdr_addr_title">Person - Title</label>
+			<label index="tx_devnulladdr_addr_title.ti_short">Description (Short)</label>
+			<label index="tx_devnulladdr_addr_title.ti_descr">Description</label>
+		</languageKey>
+		
+		<languageKey index="de" type="array">
+			<label index="tx_devnulladdr_addr_title">Person - Titel</label>
+			<label index="tx_devnulladdr_addr_title.ti_short">Kurzbezeichnung</label>
+			<label index="tx_devnulladdr_addr_title.ti_descr">Bezeichnung</label>
+		</languageKey>
+	</data>
+</T3locallang>

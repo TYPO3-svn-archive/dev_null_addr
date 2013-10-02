@@ -1,0 +1,30 @@
+config.tx_devnulladdr {
+
+    # cat=dev-null-addr: addr/basic/10; type=int; label=Storage folder of addresses
+	storagePid = 0
+
+	# cat=dev-null-addr: expert/basic/10; type=int; label=page.typeNum for js map data
+	typeNumMapJs = 1998
+
+	# cat=dev-null-addr: expert/basic/20; type=int; label=page.typeNum for kml download
+	typeNumMapKml = 1999
+}
+
+config.tx_devnulladdr.resources.mapView {
+	# cat=dev-null-addr: mapView/basic/10; type=string; label=path to dev-null-events.css
+	cssScreen = typo3conf/ext/dev_null_addr/Resources/Public/css/dev_null_addr.css
+
+	# cat=dev-null-addr: mapView/basic/20; type=string; label=path to dev-null-events.print.css
+	cssPrint = 
+
+	# cat=dev-null-addr: mapView/basic/20; type=string; label=path to dev-null-events.custom.css
+	cssCustom = 
+
+	# cat=dev-null-addr: mapView/basic/30; type=string; label=path to Google Maps API
+	jsMapApi = https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false
+
+	# cat=dev-null-addr: mapView/basic/40; type=string; label=path to Marke Clusterer library
+	jsClusterer = typo3conf/ext/dev_null_addr/Resources/Public/jscript/markerclusterer_compiled.js
+}
+
+

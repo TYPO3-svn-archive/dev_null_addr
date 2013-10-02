@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>CSH labels for FlexForm fields</description>
+		<type>CSH</type>
+		<csh_table></csh_table>
+		<fileId>EXT:dev_null_addr/pi1/locallang_csh_flexform.xml</fileId>
+		<labelContext type="array"></labelContext>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="canvasHeight.description">Height off the map canvas</label>
+			<label index="canvasHeight.details">A value with valid css unit. Default value is 400px.</label>
+			<label index="canvasWidth.description">Width off the map canvas</label>
+			<label index="canvasWidth.details">A value with valid css unit. Default value is 100%.</label>
+			<label index="latitude.description">Latitude of map center</label>
+			<label index="latitude.details">Latitude of map center as decimal degree. Valid range -90.0 to 90.0</label>
+			<label index="longitude.description">Longitude of map center</label>
+			<label index="longitude.details">Longitude of map center as decimal degree. Valid range -180.0 to 180.0</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'templatedisplay'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_devnulladdr_contact">Address Contact</label>
+			<label index="tx_devnulladdr_contact.uid">UID</label>
+			<label index="tx_devnulladdr_contact.pid">PID</label>
+			<label index="tx_devnulladdr_contact.tstamp">Timestamp</label>
+			<label index="tx_devnulladdr_contact.crdate">Date Creation</label>
+			<label index="tx_devnulladdr_contact.cruser_id">User-ID Creation</label>
+			<label index="tx_devnulladdr_contact.deleted">Deleted</label>
+			<label index="tx_devnulladdr_contact.hidden">Hidden</label>
+			<label index="tx_devnulladdr_contact.uid_foreign">Foreign Table UID</label>
+			<label index="tx_devnulladdr_contact.type">Type</label>
+			<label index="tx_devnulladdr_contact.type.I.0">Phone</label>
+			<label index="tx_devnulladdr_contact.type.I.1">Mobile Phone</label>
+			<label index="tx_devnulladdr_contact.type.I.2">Fax</label>
+			<label index="tx_devnulladdr_contact.type.I.3">E-Mail</label>
+			<label index="tx_devnulladdr_contact.type.I.4">URL</label>
+			<label index="tx_devnulladdr_contact.nature">Nature</label>
+			<label index="tx_devnulladdr_contact.nature.I.0">Private</label>
+			<label index="tx_devnulladdr_contact.nature.short.I.0">P</label>
+			<label index="tx_devnulladdr_contact.nature.I.1">Business</label>
+			<label index="tx_devnulladdr_contact.nature.short.I.1">B</label>
+			<label index="tx_devnulladdr_contact.standard">Standard</label>
+			<label index="tx_devnulladdr_contact.label">Label</label>
+			<label index="tx_devnulladdr_contact.country">Country</label>
+			<label index="tx_devnulladdr_contact.area_code">Area Code</label>
+			<label index="tx_devnulladdr_contact.number">Number</label>
+			<label index="tx_devnulladdr_contact.extension">Extension</label>
+			<label index="tx_devnulladdr_contact.email">E-Mail</label>
+			<label index="tx_devnulladdr_contact.url">URL</label>
+			<label index="tx_devnulladdr_contact.remarks">Remarks</label>
+		</languageKey>
+		
+		<languageKey index="de" type="array">
+			<label index="tx_devnulladdr_contact">Adressen Kontaktinformationen</label>
+			<label index="tx_devnulladdr_contact.uid">UID</label>
+			<label index="tx_devnulladdr_contact.pid">PID</label>
+			<label index="tx_devnulladdr_contact.tstamp">Zeitpunkt</label>
+			<label index="tx_devnulladdr_contact.crdate">Anlagedatum</label>
+			<label index="tx_devnulladdr_contact.cruser_id">Anlage Benutzer-ID</label>
+			<label index="tx_devnulladdr_contact.deleted">Gelöscht</label>
+			<label index="tx_devnulladdr_contact.hidden">Versteckt</label>
+			<label index="tx_devnulladdr_contact.uid_foreign">UID der Fremdbeziehung</label>
+			<label index="tx_devnulladdr_contact.type">Typ</label>
+			<label index="tx_devnulladdr_contact.type.I.0">Telefon</label>
+			<label index="tx_devnulladdr_contact.type.I.1">Mobiltelefon</label>
+			<label index="tx_devnulladdr_contact.type.I.2">Fax</label>
+			<label index="tx_devnulladdr_contact.type.I.3">E-Mail</label>
+			<label index="tx_devnulladdr_contact.type.I.4">URL</label>
+			<label index="tx_devnulladdr_contact.nature">Art</label>
+			<label index="tx_devnulladdr_contact.nature.I.0">Privat</label>
+			<label index="tx_devnulladdr_contact.nature.short.I.0">P</label>
+			<label index="tx_devnulladdr_contact.nature.I.1">Geschäftlich</label>
+			<label index="tx_devnulladdr_contact.nature.short.I.1">G</label>
+			<label index="tx_devnulladdr_contact.standard">Standard</label>
+			<label index="tx_devnulladdr_contact.label">Bezeichnung</label>
+			<label index="tx_devnulladdr_contact.country">Land</label>
+			<label index="tx_devnulladdr_contact.area_code">Vorwahl</label>
+			<label index="tx_devnulladdr_contact.number">Nummer</label>
+			<label index="tx_devnulladdr_contact.extension">Durchwahl</label>
+			<label index="tx_devnulladdr_contact.email">E-Mail</label>
+			<label index="tx_devnulladdr_contact.url">URL</label>
+			<label index="tx_devnulladdr_contact.remarks">Bemerkungen</label>
+		</languageKey>
+	</data>
+</T3locallang>

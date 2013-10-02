@@ -1,0 +1,106 @@
+<!-- ###MAP_MAP### end -->
+	<p class="map-canvas" id="map-canvas###MAP_UID###"></p>
+<!-- ###MAP_MAP### end -->
+<!-- ###MAP_KML_LINK### end -->
+	<p>###KML_LINK###</p>
+<!-- ###MAP_KML_LINK### end -->
+
+
+<script>
+<!-- ###MAP_SCRIPT### beginn -->
+var map###MAP_UID### = {
+	map: null,
+	clusterer: null,
+	markers: [],
+	info: [],
+	s: {},	// symbols, icons
+	i: {},	// info windows
+	m: {},	// markers
+	closeInfoWindows: function() {
+		for (var infoWnd in map###MAP_UID###.i) {
+			map###MAP_UID###.i[infoWnd].close();
+		}
+	}
+};
+
+function tx_devnulladdr_InitMap###MAP_UID###() {
+	var mapOptions = {
+		zoom: ###MAP_ZOOM###,
+		center: new google.maps.LatLng(###LATITUDE###, ###LONGITUDE###),
+		mapTypeId: google.maps.MapTypeId.HYBRID
+	};
+
+	// create map
+	map###MAP_UID###.map = new google.maps.Map(document.getElementById('map-canvas###MAP_UID###'), mapOptions);
+
+	// content of the map - points, KML-files, Info windows, ...
+	###MAP_CONTENT###
+
+	map###MAP_UID###.clusterer = new MarkerClusterer(
+		map###MAP_UID###.map, 
+		map###MAP_UID###.markers,
+		{gridSize: 50, maxZoom: 10});
+		
+	google.maps.event.addDomListener(map###MAP_UID###.map, 'click', function() {
+		map###MAP_UID###.closeInfoWindows();
+	});
+}
+
+// initialize map
+google.maps.event.addDomListener(window, 'load', tx_devnulladdr_InitMap###MAP_UID###);
+<!-- ###MAP_SCRIPT### end -->
+
+<!-- ###KML_FILE### beginn -->
+	var map###MAP_UID###_kml###KML_UID### = new google.maps.KmlLayer({
+		map: map###MAP_UID###.map,
+		url: '###KML_URL###',
+		preserveViewport: ###KML_PRESERVE###,
+		suppressInfoWindows: ###KML_SUPPRESS###
+	});
+<!-- ###KML_FILE### end -->
+
+<!-- ###MAP_ICON### begin -->
+	map###MAP_UID###.s['u###ICON_UID###'] = {
+		url: '###ICON_URL###'
+	};
+<!-- ###MAP_ICON### end -->
+
+<!-- ###MAP_DEFAULT_MARKER### begin -->
+	map###MAP_UID###.m['m###MARKER_UID###'] = new google.maps.Marker({
+		position: new google.maps.LatLng(###MARKER_LAT###, ###MARKER_LON###),
+		title:    '###MARKER_TITLE###',
+	});
+	
+	map###MAP_UID###.markers.push(map###MAP_UID###.m['m###MARKER_UID###']);
+
+<!-- ###MAP_DEFAULT_MARKER### end -->
+
+<!-- ###MAP_CUSTOM_MARKER### begin -->
+	map###MAP_UID###.m['m###MARKER_UID###'] = new google.maps.Marker({
+		position: new google.maps.LatLng(###MARKER_LAT###, ###MARKER_LON###),
+		title:    '###MARKER_TITLE###',
+		icon:     map###MAP_UID###.s['u###ICON_UID###']
+	});
+	
+	map###MAP_UID###.markers.push(map###MAP_UID###.m['m###MARKER_UID###']);
+	
+<!-- ###MAP_CUSTOM_MARKER### end -->
+
+<!-- ###INFO_WINDOW### begin -->
+	map###MAP_UID###.i['m###MARKER_UID###'] = new google.maps.InfoWindow({
+		content: '###CONTENT_STRING###',
+		maxWidth: 250
+	});
+	google.maps.event.addDomListener(map###MAP_UID###.m['m###MARKER_UID###'], 'click', function() {
+		// close open info windows
+		map###MAP_UID###.closeInfoWindows();
+
+		map###MAP_UID###.i['m###MARKER_UID###'].open(
+			map###MAP_UID###.map, 
+			map###MAP_UID###.m['m###MARKER_UID###']
+		);
+	});
+	
+<!-- ###INFO_WINDOW### end -->
+
+</script>

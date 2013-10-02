@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'templatedisplay'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_devnulladdr_map_icon_file">Google maps icon</label>
+			<label index="tx_devnulladdr_map_icon_file.title">Title</label>
+			<label index="tx_devnulladdr_map_icon_file.icon_file">Icon file</label>
+			<label index="tx_devnulladdr_map_icon_file.anchor">Anchor</label>
+			<label index="tx_devnulladdr_map_icon_file.anchor_x">Anchor X</label>
+			<label index="tx_devnulladdr_map_icon_file.anchor_y">Anchor Y</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_devnulladdr_map_icon_file">Google maps Icon</label>
+			<label index="tx_devnulladdr_map_icon_file.title">Title</label>
+			<label index="tx_devnulladdr_map_icon_file.icon_file">Symboldatei</label>
+			<label index="tx_devnulladdr_map_icon_file.anchor">Anchor</label>
+			<label index="tx_devnulladdr_map_icon_file.anchor_x">Anchor X</label>
+			<label index="tx_devnulladdr_map_icon_file.anchor_y">Anchor Y</label>
+		</languageKey>
+	</data>
+</T3locallang>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_devnulladdr_pi1&quot;</description>
+		<generator>LFEditor</generator>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.flexform.sheet_general">General</label>
+			<label index="tt_content.flexform.sheet_config">Config</label>
+			<label index="tx_devnulladdr_p1.flexform.map.zoom">Zoom</label>
+			<label index="tx_devnulladdr_p1.flexform.sheet_layers">Layers</label>
+			<label index="tx_devnulladdr_p1.flexform.sheet_layout">Layout</label>
+			<label index="tx_devnulladdr_p1.flexform.layers">Map layers</label>
+			<label index="tx_devnulladdr_p1.flexform.canvasHeight">Map height</label>
+			<label index="tx_devnulladdr_p1.flexform.canvasWidth">Map width</label>
+			<label index="tx_devnulladdr_p1.flexform.template">Template file</label>
+			<label index="tx_devnulladdr_p1.flexform.enablekml">Enable KML-download</label>
+			<label index="tx_devnulladdr_p1.linklabel.kmlDownload">Download KML-file</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tt_content.flexform.sheet_general">Allgemein</label>
+			<label index="tt_content.flexform.sheet_config">Konfiguration</label>
+			<label index="tx_devnulladdr_p1.flexform.map.zoom">Zoom</label>
+			<label index="tx_devnulladdr_p1.flexform.sheet_layers">Layers</label>
+			<label index="tx_devnulladdr_p1.flexform.layers">Kartenlayer</label>
+			<label index="tx_devnulladdr_p1.flexform.canvasHeight">Kartenhöhe</label>
+			<label index="tx_devnulladdr_p1.flexform.canvasWidth">Kartenbreite</label>
+			<label index="tx_devnulladdr_p1.flexform.template">Template file</label>
+		</languageKey>
+	</data>
+</T3locallang>

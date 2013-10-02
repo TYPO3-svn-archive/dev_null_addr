@@ -1,0 +1,262 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:dev_null_addr/pi1/locallang.xml:tt_content.flexform.sheet_general</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<map>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:dev_null_addr/Resources/Private/Language/locallang_devnulladdr_address.xml:tx_devnulladdr_address.map</label>
+							<config>
+								<type>user</type>
+								<userFunc>user_devnulladdr_map_flex->render</userFunc>
+								<params>
+									<longitude>longitude</longitude>
+									<latitude>latitude</latitude>
+								</params>
+							</config>
+						</TCEforms>
+					</map>
+					<latitude>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:dev_null_addr/Resources/Private/Language/locallang_devnulladdr_address.xml:tx_devnulladdr_address.latitude</label>
+							<config>
+								<type>input</type>
+								<size>12</size>
+								<max>12</max>
+								<eval>tx_devnulladdr_eval_latitude</eval>
+							</config>
+						</TCEforms>
+					</latitude>
+					<longitude>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:dev_null_addr/Resources/Private/Language/locallang_devnulladdr_address.xml:tx_devnulladdr_address.longitude</label>
+							<config>
+								<type>input</type>
+								<size>12</size>
+								<max>12</max>
+								<eval>tx_devnulladdr_eval_longitude</eval>
+							</config>
+						</TCEforms>
+					</longitude>
+					<zoom>
+						<TCEforms>
+							<label>LLL:EXT:dev_null_addr/pi1/locallang.xml:tx_devnulladdr_p1.flexform.map.zoom</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">0</numIndex>
+										<numIndex index="1">0</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">1</numIndex>
+										<numIndex index="1">1</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">2</numIndex>
+										<numIndex index="1">2</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">3</numIndex>
+										<numIndex index="1">3</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">4</numIndex>
+										<numIndex index="1">4</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">5</numIndex>
+										<numIndex index="1">5</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">6</numIndex>
+										<numIndex index="1">6</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">7</numIndex>
+										<numIndex index="1">7</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">8</numIndex>
+										<numIndex index="1">8</numIndex>
+									</numIndex>
+									<numIndex index="9" type="array">
+										<numIndex index="0">9</numIndex>
+										<numIndex index="1">9</numIndex>
+									</numIndex>
+									<numIndex index="10" type="array">
+										<numIndex index="0">10</numIndex>
+										<numIndex index="1">10</numIndex>
+									</numIndex>
+									<numIndex index="11" type="array">
+										<numIndex index="0">11</numIndex>
+										<numIndex index="1">11</numIndex>
+									</numIndex>
+									<numIndex index="12" type="array">
+										<numIndex index="0">12</numIndex>
+										<numIndex index="1">12</numIndex>
+									</numIndex>
+									<numIndex index="13" type="array">
+										<numIndex index="0">13</numIndex>
+										<numIndex index="1">13</numIndex>
+									</numIndex>
+									<numIndex index="14" type="array">
+										<numIndex index="0">14</numIndex>
+										<numIndex index="1">14</numIndex>
+									</numIndex>
+									<numIndex index="15" type="array">
+										<numIndex index="0">15</numIndex>
+										<numIndex index="1">15</numIndex>
+									</numIndex>	
+									<numIndex index="16" type="array">
+										<numIndex index="0">16</numIndex>
+										<numIndex index="1">16</numIndex>
+									</numIndex>	
+									<numIndex index="17" type="array">
+										<numIndex index="0">17</numIndex>
+										<numIndex index="1">17</numIndex>
+									</numIndex>	
+									<numIndex index="18" type="array">
+										<numIndex index="0">18</numIndex>
+										<numIndex index="1">18</numIndex>
+									</numIndex>	
+									<numIndex index="19" type="array">
+										<numIndex index="0">19</numIndex>
+										<numIndex index="1">19</numIndex>
+									</numIndex>	
+									<numIndex index="20" type="array">
+										<numIndex index="0">20</numIndex>
+										<numIndex index="1">20</numIndex>
+									</numIndex>
+									<default>8</default>
+								</items>
+							</config>
+						</TCEforms>
+					</zoom>
+				</el>
+			</ROOT>
+		</sDEF>
+		<sLayers>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:dev_null_addr/pi1/locallang.xml:tx_devnulladdr_p1.flexform.sheet_layers</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<adressen>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:dev_null_addr/pi1/locallang.xml:tx_devnulladdr_p1.flexform.layers</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>tx_devnulladdr_map_layers,tx_devnulladdr_kml_file</allowed>
+								<MM>tx_devnulladdr_map_layers_mm</MM>
+								<MM_match_fields>
+									<matchfield>tx_devnulladdr_pi1</matchfield>
+								</MM_match_fields>
+								<MM_insert_fields>
+									<matchfield>tx_devnulladdr_pi1</matchfield>
+								</MM_insert_fields>
+								<!--
+								<foreign_table_where>
+									AND (tx_gomapsap_adress.pid=###CURRENT_PID### 
+									OR tx_gomapsap_adress.pid=###STORAGE_PID###
+									OR tx_gomapsap_adress.pid=###PAGE_TSCONFIG_ID###
+									OR tx_gomapsap_adress.pid IN (###PAGE_TSCONFIG_IDLIST###))
+								</foreign_table_where>
+								-->
+								<size>10</size>
+								<minitems>0</minitems>
+								<maxitems>99</maxitems>
+								<multiple>0</multiple>
+								<eval>required</eval>
+								<show_thumbs>1</show_thumbs>
+								<wizards>
+									<suggest>
+										<type>suggest</type>
+									</suggest>
+								</wizards>
+							</config>
+						</TCEforms>
+					</adressen>
+				</el>
+			</ROOT>
+		</sLayers>
+		<sLayout>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:dev_null_addr/pi1/locallang.xml:tx_devnulladdr_p1.flexform.sheet_layout</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<canvasHeight>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:dev_null_addr/pi1/locallang.xml:tx_devnulladdr_p1.flexform.canvasHeight</label>
+							<config>
+								<type>input</type>
+								<size>8</size>
+								<max>8</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</canvasHeight>
+					<canvasWidth>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:dev_null_addr/pi1/locallang.xml:tx_devnulladdr_p1.flexform.canvasWidth</label>
+							<config>
+								<type>input</type>
+								<size>8</size>
+								<max>8</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</canvasWidth>
+				</el>
+			</ROOT>
+		</sLayout>
+		<sConfig>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:dev_null_addr/pi1/locallang.xml:tt_content.flexform.sheet_config</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<enablekml>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:dev_null_addr/pi1/locallang.xml:tx_devnulladdr_p1.flexform.enablekml</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</enablekml>
+					<template>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:dev_null_addr/pi1/locallang.xml:tx_devnulladdr_p1.flexform.template</label>
+							<config>
+								<type>input</type>
+								<size>50</size>
+								<max>128</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</template>
+				</el>
+			</ROOT>
+		</sConfig>
+	</sheets>
+</T3DataStructure>

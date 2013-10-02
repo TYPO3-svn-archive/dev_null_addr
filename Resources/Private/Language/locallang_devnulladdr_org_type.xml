@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'templatedisplay'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_devnulladdr_org_type">Organization type</label>
+			<label index="tx_devnulladdr_org_type.ot_short">Abbreviation</label>
+			<label index="tx_devnulladdr_org_type.ot_descr">Description</label>
+		</languageKey>
+		
+		<languageKey index="de" type="array">
+			<label index="tx_devnulladdr_org_type">Organisation - Typen</label>
+			<label index="tx_devnulladdr_org_type.ot_short">Abkürzung</label>
+			<label index="tx_devnulladdr_org_type.ot_descr">Bezeichnung</label>
+		</languageKey>
+	</data>
+</T3locallang>
